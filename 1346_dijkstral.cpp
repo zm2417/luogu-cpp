@@ -38,9 +38,9 @@ int main()
     {
         Node temp = q.top();
         q.pop();
-        if (vis[temp.p])
-            continue;
-        vis[temp.p] = 1;
+        // if (vis[temp.p])
+        //     continue;
+        // vis[temp.p] = 1;
         for (int i = 0; i < d[temp.p].size(); i++)
         {
             int p = d[temp.p][i];
