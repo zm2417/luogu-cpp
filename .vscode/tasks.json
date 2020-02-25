@@ -5,17 +5,19 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "g++ build active file",
-            "command": "/usr/bin/g++",
+            "label": "g++.exe build active file",
+            "command": "F:\\bin\\g++.exe",
             "args": [
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-Wall",
+                "-static-libgcc",
                 "-std=c++11"
             ],
             "options": {
-                "cwd": "/usr/bin"
+                "cwd": "F:\\bin"
             },
             "problemMatcher": [
                 "$gcc"
